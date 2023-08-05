@@ -34,6 +34,9 @@ font-family: "Roboto", sans-serif;
 color: var(--primary-colors);
 background-color: var(--bg-color);
 }
+.header{
+    border-bottom: 1px solid #e7e9fc
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -124,6 +127,7 @@ button {
 /* top Line */
 .nav {
 display: flex;
+align-items: center;
 
 }
 
@@ -251,13 +255,14 @@ color: #404bbf;
 
 /* hero images */
 .hero {
+    padding: 188px 0
         flex-shrink: 0;
     background: var(--navyblue);
 
 }
 
 .hero-title {
-        width:496px;;
+        max-width:496px;;
         margin: 0 auto;
         margin-bottom:  48px;
         font-weight: 700;
@@ -368,12 +373,13 @@ letter-spacing:0.02em;
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
-    column-gap: var(--indent);
+    column-gap: 24px;
+    /* column-gap: var(--indent); */
 }
 
 .card-set-item {
-    width: calc((100% - var(--indent) * var(--item)-1)) / var(--item);
-
+    /* width: calc((100% - var(--indent) * var(--item)-1)) / var(--item); */
+width: calc((100% - 24px * 2)) / 3;
 }
 
 
@@ -414,6 +420,8 @@ color:var(--desc-team-title-color) ;
 }
 
 /.desc-team-list-item {
+    display: flex;
+    gap: 24px;
    width: calc((100% - 24px * 3)) / 4;
     list-style: none;
     background-color: #FFFFFF;
@@ -462,6 +470,7 @@ color:var(--logo-color)
 
 .logo-footer{
     display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-desc {
 margin-top: 16px;
@@ -489,9 +498,10 @@ list-style:none;
     display: flex;
     margin-bottom: 72px;
     justify-content: center;
+    gap: 24px;
 }
 .portfolio-button {
-    margin-right: 24px;
+    padding: 12px 24px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
