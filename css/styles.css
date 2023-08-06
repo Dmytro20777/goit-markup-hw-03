@@ -369,7 +369,7 @@ letter-spacing:0.02em;
     color:var(--desc-title-color)
 }
 
-.card-set {
+.card-set-ul {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
@@ -411,6 +411,10 @@ text-align:center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color:var(--desc-team-title-color) ;
+}
+
+.card-set-our-team{
+    gap: 24px;
 }
 
 
