@@ -414,6 +414,7 @@ color:var(--desc-team-title-color) ;
 }
 
 .card-set-our-team{
+    display: flex;
     gap: 24px;
 }
 
@@ -422,12 +423,10 @@ color:var(--desc-team-title-color) ;
 }
 .our-team {
     display: flex;
-    gap: 24px;
     text-align: center;
 }
 
 .desc-team-list-item {
-    
     gap: 24px;
   width: calc((100% - 72px) / 4);
     list-style: none;
@@ -496,12 +495,18 @@ max-width: 264px;
 background-color:var(--portfolio-footer-bg)
 }
 
-.card-set {
+.card-set-opportunities {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
 row-gap: 48px;
 }
 
 .list-opportunities{
     text-align: center;
+}
+.card-set-item-opportunities{
+width: calc((100% - 48px) / 3);
 }
 .list {
 list-style:none;
